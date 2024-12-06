@@ -34,9 +34,10 @@ This project demonstrates an end-to-end data pipeline for extracting, transformi
 - pip install -r requirements.txt
 3. Set up Kaggle API credentials:
 - Place your kaggle.json file in ~/.kaggle/.
-4. Run the ETL process manually:
+4. Edit dag file dags_folder, data_folder, database_folder and database_path to correct ones in your own system.
+5. Run the ETL process manually:
 - python dags/etl_pipeline.py
-5. Use Airflow for automation:
+6. Use Airflow for automation:
 - Place the dags/ folder in your Airflow directory.
 - Start the Airflow scheduler.
 
