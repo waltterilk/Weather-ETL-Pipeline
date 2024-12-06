@@ -1,6 +1,6 @@
-pandas==1.5.3
-matplotlib==3.6.2
-seaborn==0.12.1
-sqlalchemy==2.0.4
-kaggle==1.5.13
-apache-airflow==2.7.2
+pandas
+matplotlib
+seaborn
+sqlalchemy
+kaggle
+apache-airflow
