@@ -29,10 +29,7 @@ This project demonstrates an end-to-end data pipeline for extracting, transformi
 - SQLite
 
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/weather-etl-pipeline.git
-   cd weather-etl-pipeline
+1. Clone the repository
 2. Install required packages:
 - pip install -r requirements.txt
 3. Set up Kaggle API credentials:
