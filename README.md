@@ -2,11 +2,10 @@
 This project demonstrates an end-to-end data pipeline for extracting, transforming, and loading (ETL) weather data into a SQLite database. It showcases skills in data engineering, including data extraction via APIs, data cleaning, transformation, and pipeline automation using Apache Airflow.
 
 ## Features
-* Downloads historical weather data from Kaggle.
-* Cleans and transforms data into daily and monthly summaries.
-* Automates the pipeline with Apache Airflow.
-* Loads transformed data into a SQLite database for further analysis.
-* Categorizes wind speed into descriptive strength categories (e.g., Gentle Breeze, Storm).
+- Downloads weather data from Kaggle.
+- Cleans and processes data into daily and monthly summaries.
+- Loads data into a SQLite database for analysis and visualization.
+- Airflow DAG for automated pipeline execution.
 
 ## ETL Workflow
 1. Extract: Download historical weather data from Kaggle using the Kaggle API.
@@ -15,5 +14,46 @@ This project demonstrates an end-to-end data pipeline for extracting, transformi
    * Monthly summaries with temperature range (min, max) and precipitation mode.
    * Categorization of wind strength into descriptive labels.
 3. Load: Save the transformed data into a SQLite database for easy querying.
+
+## Repository Structure
+- `dags/`: Contains the Airflow DAG and ETL script.
+- `data/`: Placeholder for raw data.
+- `databases/`: SQLite database for storing processed weather data.
+- `weather_etl_pipeline.ipynb`: Jupyter Notebook with the ETL process explained.
+- `README.md`: Project documentation.
+
+## Prerequisites
+- Python 3.8+
+- Kaggle API (set up authentication as per [Kaggle documentation](https://www.kaggle.com/docs/api))
+- Apache Airflow
+- SQLite
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/weather-etl-pipeline.git
+   cd weather-etl-pipeline
+2. Install required packages:
+- pip install -r requirements.txt
+3. Set up Kaggle API credentials:
+- Place your kaggle.json file in ~/.kaggle/.
+4. Run the ETL process manually:
+- python dags/etl_pipeline.py
+5. Use Airflow for automation:
+- Place the dags/ folder in your Airflow directory.
+- Start the Airflow scheduler.
+
+## Usage
+- Jupyter Notebook: Open weather_etl_pipeline.ipynb to view the data pipeline process.
+- Airflow: Use the DAG to automate data processing.
+
+
+
+
+
+
+
+
+
 
 
